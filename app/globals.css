@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+html {
+  color-scheme: dark;
+}
+
+::selection {
+  background-color: var(--color-emerald-400);
+  color: var(--color-zinc-950);
+}
