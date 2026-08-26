@@ -1,21 +1,24 @@
 export const site = {
-  name: "Prénom Nom",
-  initials: "PN",
-  role: "Développeur Full-Stack",
-  email: "contact@example.com",
-  location: "Paris, France",
-  bio: "Je conçois et développe des applications web modernes, rapides et accessibles. Curieux de nature, j'aime transformer des idées en produits concrets.",
+  name: "Ettien Kouassi Yann Guy Axel",
+  initials: "EY",
+  role: "Développeur Web & Mobile · Data Scientist Junior",
+  email: "ettienyane@gmail.com",
+  location: "Côte d'Ivoire",
+  bio: "Développeur web et mobile, data scientist junior. Passionné par l'analyse de données et l'IA, j'aime transformer des idées en produits concrets et des données en décisions.",
   about: [
-    "Bonjour ! Je suis développeur full-stack passionné par la création d'expériences web soignées. Je m'intéresse autant à l'architecture côté serveur qu'au pixel près côté interface.",
-    "Au fil de mes projets, j'ai travaillé avec JavaScript, TypeScript, React et Node.js. Aujourd'hui, je cherche à rejoindre une équipe où je pourrai avoir un impact réel tout en continuant à progresser.",
+    "Bonjour ! Je suis développeur web et mobile avec un goût prononcé pour la donnée. Je construis des applications modernes et je m'appuie sur l'analyse de données et l'intelligence artificielle pour répondre à des problèmes concrets.",
+    "Mon profil hybride développement / data science me permet de couvrir l'ensemble de la chaîne : collecte et traitement des données, création des modèles, puis mise en production au sein d'applications performantes.",
   ],
   skills: [
     "JavaScript",
     "TypeScript",
     "React",
     "Next.js",
-    "Node.js",
-    "PostgreSQL",
+    "React Native",
+    "Python",
+    "Pandas",
+    "scikit-learn",
+    "SQL",
     "Tailwind CSS",
     "Git",
   ],
@@ -29,8 +32,11 @@ export const navLinks = [
 ];
 
 export const socials = [
-  { label: "GitHub", href: "https://github.com/votre-profil" },
-  { label: "LinkedIn", href: "https://linkedin.com/in/votre-profil" },
+  { label: "GitHub", href: "https://github.com/EttienYann" },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/ettien-kouassi-yann-guy-axel-a38278275/",
+  },
 ];
 
 export type Project = {

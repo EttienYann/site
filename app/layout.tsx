@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Prénom Nom — Portfolio",
+  title: "Ettien Kouassi Yann Guy Axel — Portfolio",
   description:
-    "Portfolio de Prénom Nom, développeur full-stack. Projets, expériences et contact.",
+    "Portfolio d'Ettien Kouassi Yann Guy Axel, développeur web et mobile et data scientist junior. Projets, expériences et contact.",
 };
 
 export default function RootLayout({
