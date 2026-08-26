@@ -1,33 +1,42 @@
 export const site = {
-  name: "Ettien Kouassi Yann Guy Axel",
+  name: "Ettien Kouassi Yann",
   initials: "EY",
   role: "Développeur Web & Mobile · Data Scientist Junior",
   email: "ettienyane@gmail.com",
-  location: "Côte d'Ivoire",
-  bio: "Développeur web et mobile, data scientist junior. Passionné par l'analyse de données et l'IA, j'aime transformer des idées en produits concrets et des données en décisions.",
+  phone: "+225 01 01 91 18 85",
+  location: "Bingerville, Côte d'Ivoire",
+  bio: "Développeur web & data scientist junior, passionné par l'innovation. Je conçois des solutions data et IA pour optimiser la prise de décision.",
   about: [
-    "Bonjour ! Je suis développeur web et mobile avec un goût prononcé pour la donnée. Je construis des applications modernes et je m'appuie sur l'analyse de données et l'intelligence artificielle pour répondre à des problèmes concrets.",
-    "Mon profil hybride développement / data science me permet de couvrir l'ensemble de la chaîne : collecte et traitement des données, création des modèles, puis mise en production au sein d'applications performantes.",
+    "Développeur web & data scientist junior, passionné par l'innovation, je maîtrise Python et j'ai une grande capacité d'adaptation aux autres langages. Je conçois des solutions data et IA pour optimiser la prise de décision.",
+    "Curieux, autonome et orienté résultats, je couvre l'ensemble de la chaîne : collecte et traitement des données, création de modèles de machine learning, puis mise en production au sein d'applications web et mobiles.",
   ],
   skills: [
-    "JavaScript",
-    "TypeScript",
-    "React",
-    "Next.js",
-    "React Native",
     "Python",
-    "Pandas",
-    "scikit-learn",
     "SQL",
-    "Tailwind CSS",
-    "Git",
+    "DAX",
+    "Pandas",
+    "NumPy",
+    "Scikit-learn",
+    "Matplotlib",
+    "Seaborn",
+    "Keras",
+    "NLTK",
+    "Django",
+    "Streamlit",
+    "Power BI",
+    "Tableau",
   ],
 };
+
+export const languages = [
+  { name: "Français", level: "Natif" },
+  { name: "Anglais", level: "Intermédiaire" },
+];
 
 export const navLinks = [
   { label: "À propos", href: "#a-propos" },
   { label: "Projets", href: "#projets" },
-  { label: "Expériences", href: "#experiences" },
+  { label: "Formation", href: "#formation" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -49,56 +58,72 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "Nom du projet 1",
+    title: "Prédiction du diabète de type 2",
     description:
-      "Application web de gestion de tâches avec authentification, temps réel et tableau de bord statistiques.",
-    tags: ["Next.js", "TypeScript", "PostgreSQL"],
-    link: "https://exemple.com",
-    repo: "https://github.com/votre-profil/projet-1",
+      "Application de techniques de machine learning sur une base de données médicale pour prédire le diabète de type 2.",
+    tags: ["Python", "Scikit-learn"],
   },
   {
-    title: "Nom du projet 2",
+    title: "Campagne marketing bancaire",
     description:
-      "API REST performante pour une plateforme e-commerce : panier, paiements et notifications par email.",
-    tags: ["Node.js", "Express", "Stripe"],
-    repo: "https://github.com/votre-profil/projet-2",
+      "Modèles de machine learning pour cibler efficacement les clients d'une banque dans le cadre d'une campagne marketing.",
+    tags: ["Python", "Pandas", "Scikit-learn"],
   },
   {
-    title: "Nom du projet 3",
+    title: "Prédiction des survivants du Titanic",
     description:
-      "Site vitrine responsive avec optimisation SEO, scores Lighthouse au vert et déploiement continu.",
-    tags: ["React", "Tailwind CSS", "Vercel"],
-    link: "https://exemple.com",
+      "Classification des passagers survivants à partir du célèbre jeu de données Titanic, avec comparaison de plusieurs modèles.",
+    tags: ["Python", "Keras", "Matplotlib"],
+  },
+  {
+    title: "Web scraping NASA",
+    description:
+      "Collecte automatisée de données par web scraping en Python, à l'aide d'une clé d'API, depuis les pages de la NASA.",
+    tags: ["Python", "API REST"],
+  },
+  {
+    title: "Interfaces ML avec Streamlit",
+    description:
+      "Conception d'interfaces utilisateur en Python avec Streamlit pour déployer et présenter les projets de machine learning.",
+    tags: ["Python", "Streamlit"],
+  },
+  {
+    title: "Tableaux de bord Power BI",
+    description:
+      "Exploration de jeux de données et création de tableaux de bord interactifs pour le suivi d'indicateurs clés.",
+    tags: ["Power BI", "DAX"],
   },
 ];
 
-export type Experience = {
-  role: string;
-  company: string;
+export type Education = {
+  degree: string;
+  school: string;
   period: string;
-  description: string;
+  description?: string;
 };
 
-export const experiences: Experience[] = [
+export const education: Education[] = [
   {
-    role: "Développeur Full-Stack",
-    company: "Entreprise 1",
-    period: "2024 — Aujourd'hui",
-    description:
-      "Développement de fonctionnalités sur une application SaaS utilisée par plusieurs milliers d'utilisateurs. Refonte du design system et amélioration des performances.",
+    degree: "Master 2 Big Data & IA",
+    school: "Institut Universitaire d'Abidjan",
+    period: "2025 — 2026",
   },
   {
-    role: "Développeur Front-End (alternance)",
-    company: "Entreprise 2",
-    period: "2022 — 2024",
-    description:
-      "Intégration de nouvelles interfaces React, mise en place de tests automatisés et collaboration étroite avec l'équipe design.",
+    degree: "Master 1 Big Data & IA",
+    school: "Institut Universitaire d'Abidjan",
+    period: "2024 — 2025",
   },
   {
-    role: "Formation",
-    company: "École / Université",
-    period: "2019 — 2022",
-    description:
-      "Diplôme en informatique, spécialité génie logiciel. Projets académiques en équipe autour du développement web.",
+    degree: "Licence en développement d'applications web et mobile",
+    school: "Université Internationale des Sciences et Technologies",
+    period: "2021 — 2023",
+  },
+];
+
+export const certifications = [
+  {
+    title: "Certification en Data Science",
+    issuer: "GoMyCode",
+    year: "2024",
   },
 ];

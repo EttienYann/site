@@ -1,4 +1,4 @@
-import { site } from "@/lib/data";
+import { languages, site } from "@/lib/data";
 
 export function SectionHeading({ index, title }: { index: string; title: string }) {
   return (
@@ -22,6 +22,10 @@ export function About() {
         </div>
         <div>
           <p className="font-mono text-xs tracking-widest text-zinc-500 uppercase">
+            Localisation
+          </p>
+          <p className="mt-3 text-sm text-zinc-400">{site.location}</p>
+          <p className="mt-6 font-mono text-xs tracking-widest text-zinc-500 uppercase">
             Technologies
           </p>
           <ul className="mt-4 flex flex-wrap gap-2">
@@ -31,6 +35,16 @@ export function About() {
                 className="rounded-full border border-zinc-800 px-3 py-1 font-mono text-xs text-zinc-400"
               >
                 {skill}
+              </li>
+            ))}
+          </ul>
+          <p className="mt-6 font-mono text-xs tracking-widest text-zinc-500 uppercase">
+            Langues
+          </p>
+          <ul className="mt-4 space-y-2">
+            {languages.map((language) => (
+              <li key={language.name} className="text-sm text-zinc-400">
+                {language.name} <span className="text-zinc-600">· {language.level}</span>
               </li>
             ))}
           </ul>
