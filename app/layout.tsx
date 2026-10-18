@@ -7,12 +7,17 @@ export const metadata: Metadata = {
     "Portfolio d'Ettien Kouassi Yann Guy Axel, développeur web et mobile et data scientist junior. Projets, expériences et contact.",
 };
 
+const themeScript = `(function(){try{var t=localStorage.getItem("theme");if(t?t==="dark":true){document.documentElement.classList.add("dark")}}catch(e){document.documentElement.classList.add("dark")}})()`;
+
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="fr" className="scroll-smooth">
-      <body className="bg-zinc-950 text-zinc-300 antialiased">{children}</body>
+    <html lang="fr" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
+      <body className="bg-surface text-body antialiased">{children}</body>
     </html>
   );
 }
