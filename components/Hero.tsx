@@ -49,22 +49,22 @@ export default function Hero() {
         </div>
 
         {/* Photo de profil extraite du CV */}
-        <div className="animate-fade-up relative shrink-0 [animation-delay:250ms]">
-          <div
-            aria-hidden
-            className="absolute -inset-2 rounded-full bg-gradient-to-tr from-emerald-500/30 to-teal-400/30 blur-2xl dark:from-emerald-400/25 dark:to-cyan-400/25"
-          />
-          <div className="relative size-44 overflow-hidden rounded-full border-4 border-edge bg-panel shadow-2xl ring-4 ring-emerald-500/20 md:size-56">
-            <Image
-              src="/profile.jpg"
-              alt={site.name}
-              width={288}
-              height={432}
-              priority
-              className="size-full object-cover object-top transition-transform duration-500 hover:scale-105"
+          <div className="animate-fade-up relative shrink-0 [animation-delay:250ms]">
+            <div
+              aria-hidden
+              className="absolute -inset-3 rounded-3xl bg-gradient-to-tr from-emerald-500/40 via-teal-400/20 to-cyan-500/40 blur-2xl dark:from-emerald-400/30 dark:via-teal-400/20 dark:to-cyan-400/30 animate-pulse"
             />
+            <div className="relative size-48 overflow-hidden rounded-2xl border-2 border-emerald-500/30 bg-panel shadow-2xl ring-4 ring-emerald-500/10 md:size-64 backdrop-blur-sm transition-transform duration-500 hover:scale-[1.02]">
+              <Image
+                src="/profile.jpg"
+                alt={site.name}
+                width={288}
+                height={432}
+                priority
+                className="size-full object-cover object-top"
+              />
+            </div>
           </div>
-        </div>
       </div>
     </section>
   );
